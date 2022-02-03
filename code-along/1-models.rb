@@ -37,6 +37,16 @@ company.save
 
 puts "There are #{Company.all.count} companies."
 
+values = {
+    name: "Tesla", 
+    url: "https://tesla.com", 
+    city: "Santa Clara", 
+    state: "CA"
+}
+company = Company.new(values)
+company.save
+
+puts "There are #{Company.all.count} companies."
 
 company = Company.new
 # company.write_attribute(:name, "Tesla")
